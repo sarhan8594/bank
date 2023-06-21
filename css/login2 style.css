@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-image: url(pictures/mob\ back\ log.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+.navbar__brand {
+  width: 100px;
+}
+
+.navbar__logo {
+  width: 100%;
+}
+
+.head__1 {
+  font-weight: 600;
+  color: #F9F9F9;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #5a3385 0%,
+     #3f0455 51%,
+     #5a3385 100%
+    );
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn :hover {
+  background-image: linear-gradient(
+    to right,
+    #3f0455 0%,
+    #5a3385 51%,
+    #3f0455 100%
+  );
+  cursor: pointer;
+}
+
+.offcanvas-body {
+  margin-top: 30px;
+  text-align: center;
+}
+
+table, th, td {
+  border: 3px solid white;
+  border-collapse: collapse;
+ 
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+
+.label__headding {
+color: #ffffff;
+font-weight: 500;
+background-color:rgba(0, 0, 0, 0.327);
+}
+
+.label__para {
+  color: aliceblue;
+  background-color:rgba(0, 0, 0, 0.327);
+}
+.hero__description {
+  width: 100%;
+}
+
+.hero__text {
+  font-weight: 200;
+  font-size: 25px;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+
+
+
+
+
+.Login__text {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1d3557;
+  background-color: antiquewhite;
+  border-radius: 8px;
+
+  align-items: center;
+}
+
+.card-img-overlay {
+  margin: 30% 10% ;
+
+}
+
+@media (min-width: 768px) {
+  .explore__menu__lists {
+  margin-top: 45px;
+    padding: 0 30px;
+  }
+
+  .card {
+    align-items: center;
+    width: 50%;
+    height: 25%;
+   
+    margin-left:25% ;
+  }
+
+
+
+
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .hero__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+     max-width: 70%;
+  }
+
+  .explore__menu__container {
+    width: auto;
+  }
+
+   .navbar__brand {
+     width: 150px;
+   }
+
+
+
+   .hero__description {
+     width: 100%;
+   }
+
+   .hero__text {
+     font-size: 50px;
+   }
+
+
+   .Login__text {
+    margin-left: 45%;
+    display: inline;
+   }
+}

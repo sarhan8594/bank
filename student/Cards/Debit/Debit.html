@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cards / Debit card</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+<link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="styles.css">
+<!-- here i adding bootstrap cdn links -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- end CDN links -->
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="layout has-sidebar fixed-sidebar fixed-header">
+      <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+        <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+        <div class="image-wrapper">
+          <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+        </div>
+        <div class="sidebar-layout">
+          <div class="sidebar-header">
+            <div class="pro-sidebar-logo">
+              <div><img src="logo.png" style="height: 45px;"></div>
+              <h5>OUT OF THE BOX </h5>
+            </div>
+          </div>
+          <div class="sidebar-content">
+            <nav class="menu open-current-submenu">
+              <ul>
+                <li class="menu-header"><span> GENERAL </span></li>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-vip-diamond-fill"></i>
+                    </span>
+                    
+                    <span class="menu-title">Account Generation</span>
+                    
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <!-- <li class="menu-item">
+                        <a href="./Accounts/salary/salary.html">
+                          <span class="menu-title">Salary </span>
+                          
+
+                        </a>
+                      </li> -->
+                      <li class="menu-item">
+                        <a href="../../Accounts/current/current.html">
+                          <span class="menu-title">Current </span>
+                        </a>
+                      </li>
+                      <li class="menu-item sub-menu">
+                        <a href="../../Accounts/savings/savings.html">
+                          <span class="menu-title">Savings </span>
+                        </a>
+                        
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-bar-chart-2-fill"></i>
+                    </span>
+                    <span class="menu-title">Loans</span>
+                    
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a href="../../Loans/Personal/personal.html">
+                          <span class="menu-title">Loans For Students</span>
+                          
+      
+                        </a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-shopping-cart-fill"></i>
+                    </span>
+                    <span class="menu-title">Cards</span>
+                    <span class="menu-suffix">
+                      <span class="badge primary">new</span>
+                    </span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a href="../../Cards/Credit/Credit.html">
+                          <span class="menu-title">Credit </span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="../../Cards/Debit/Debit.html">
+                          <span class="menu-title">Debit</span>
+                          <span class="menu-suffix">
+                            <span class="badge primary">></span>
+                          </span>
+                        </a>
+                      </li>
+                      <!--<li class="menu-item">
+                        <a href="#">
+                          <span class="menu-title">credit card</span>
+                        </a>
+                      </li>-->
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-global-fill"></i>
+                    </span>
+                    <span class="menu-title">Internet Banking</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a href="../../Internet Banking/Basic/index.html">
+                          <span class="menu-title">Basic Services</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="../../Internet Banking/Advanced/index.html">
+                          <span class="menu-title">Advanced Services</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                     <i class="ri-paint-brush-fill"></i>
+                    </span>
+                    <span class="menu-title">Insurances</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a href="../../Insurances/Health/index.html">
+                          <span class="menu-title">Health & Life</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="../../Insurances/Mescellaneous/index.html">
+                          <span class="menu-title">Miscellaneous</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-header" style="padding-top: 20px"><span> EXTRA </span></li>
+                <!-- <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-book-2-fill"></i>
+                    </span>
+                     <span class="menu-title">Mutual Funds</span>
+                    <span class="menu-suffix">
+                      <span class="badge secondary">Beta</span>
+                    </span>
+                  </a>
+                </li> -->
+                <li class="menu-item">
+                  <a href="../../International/international.html">
+                    <span class="menu-icon">
+                      <i class="ri-calendar-fill"></i>
+                    </span> 
+                    <span class="menu-title">International Transactions</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-service-fill"></i>
+                    </span>
+                    <span class="menu-title">Home</span>
+                    <a href="index.html"></a>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar-footer">
+            <div class="footer-box">
+              <div>
+                 <img
+                  class="react-logo"
+                 src="logo.png"
+                  alt="react"
+                />
+              </div> 
+              <div style="padding: 0 10px">
+                <span style="display: block; margin-bottom: 10px"
+                  ><u>OUT OF THE BOX</u><br>think beyond
+                </span>
+                <div style="margin-bottom: 15px">
+                  <img
+                    alt="preview badge"
+                    src="https://img.shields.io/github/stars/azouaoui-med/react-pro-sidebar?style=social"
+                  />
+                </div>
+                <div>
+                  <a href="https://github.com/azouaoui-med/react-pro-sidebar" target="_self"
+                    >Check it out!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div id="overlay" class="overlay"></div>
+      <div class="layout">
+        <main class="content">
+          <div>
+            <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+              <i class="ri-menu-line ri-xl"></i>
+            </a>
+            <!-- <h1 class="text-center">Car loans</h1> -->
+            <div class=" p-4  mb-4  border text-center" style="background-color: #b8ceea; color: #142c4c;">
+              <h1>Debit Cards</h1>
+              <p >Hello guys we are here for you.We will do true your dreams</p>
+            </div>
+            
+            <div >ATM-cum-Debit Cards are plastic payment cards that your bank issues when you open an account with them. It is linked to your Savings, Current, or Checking Account. When you swipe your debit card, funds are directly debited from the linked account and transferred into the payees’ accounts. These cards typically come with a Europay, MasterCard and Visa (EMV) chip embossed on them. Also known as an ATM card, you can use it to withdraw cash at ATM kiosks and vestibules.
+              
+
+
+               </div>
+               <ul>
+                <li>A Debit Card is an EMV chip-based payment card.</li>
+                <li>It is linked to your bank account and helps you make cashless payments.</li>
+                <li> You can use it to make both offline and online payments.</li>
+                <li>When you swipe your debit card, funds are debited from the linked account in real-time.</li>
+                <li>You must not share your debit card PIN or write it down anywhere as a security measure.</li>
+               </ul>
+               
+
+
+               <div class="mt-3">
+                <h2 class="text-primary">Features and Benefits of Debit Cards</h2>
+    <p>Besides knowing Debit card meaning, you should be aware of its unique features and benefits such as:-
+    </p>
+    <ul>
+      <li>Debit Cards are quick, contactless, and convenient payments tools.</li>
+      <li>They enable you to make real-time payments from your linked account.</li>
+      <li>Banks offer discounts, offers, and cashback on certain Debit Cards</li>
+      <li> You can use Visa and MasterCard Debit Cards abroad by enabling international usage.</li>
+      <li>You can load digital wallets using your Debit Card.</li>
+    </ul>
+
+
+
+    </div>
+
+              <!-- There are many banks that offer student accounts with different benefits such as no fees, online and mobile banking options, ample ATM access, and more. Some banks also offer credit lines for students. Here are some banks that offer student accounts.A student bank account is a checking, savings, or other financial account that typically offers low fees and convenience features geared toward students. Banks, credit unions, and other financial institutions offer these student-specific accounts to both high school and college students. Some accounts are available to younger students, as well.<br>
+
+              Student bank accounts should provide student-friendly features like no fees, online and mobile banking options, ample ATM access, and more. Some may also offer student financial education, access to financial coaches, or online webinars. Generally, the best student bank accounts make it easy to sign up, deposit funds, and manage your account from anywhere. Read on for our selections of the best banks for students.
+              <br>Students under 18 years of age need a parent or guardian to register as an account co-owner. Most banks allow parents to open an account for their students online. If you prefer an in-person experience, make sure that the bank you're considering has a local branch near you.
+<br>
+              To open a student bank account, students will typically need to provide a photo ID such as a passport or driver’s license and their Social Security number. For some accounts, students may also need to present their school ID as proof of enrollment as a student.
+              
+              While some banks don’t require a deposit to open an account, others require a minimum deposit amount. Deposits can be made by online transfer, by check, or with cash (in person at a branch).
+              <br>
+              Once the account is opened, students can create an online username and password for online access via the web or a mobile app. Students are encouraged to download the bank’s mobile app, as features like mobile deposit may only be available via the app. Debit cards typically are mailed to the student. They will need to be activated once received.
+              
+              
+            </span>
+            <br />
+            <div id="Salary" class="tabcontent">
+              <h3>Salary Account</h3>
+              <p>London is the capital city of England.</p>
+            </div>
+            <span>
+             
+            
+          <div>
+            <h2>Features</h2>
+            <ul>
+              <li>Best for High School Students</li>
+              <li>Best Overall</li>
+              <li>Best for College Students</li>
+              <li>Best Online Bank </li>
+              <li>Best for Savings</li>
+              <li>Best for Multiple Accounts</li>
+              <li>Best for Rewards</li>
+            </ul>
+          </div> -->
+
+
+          <!-- SBI Bank car loan details -->
+          <!-- <!-- <hr>
+          <div class="mt-3">
+            <h2 class="text-primary">SBI Bank Loans</h2>
+<p>SBI offers personal loans at interest rates starting at 9.60% p.a. with tenures of up to 7 years. The loan amount ranges from Rs.25,000 to Rs.20 lakh depending on your eligibility. The processing fee ranges up to 1.5% of the loan amount.
+
+</p>
+<hr>
+            <table class="table table-striped">
+              <tr>
+                <th>Particulars</th>
+                <th>Salaried/Self Employed</th>
+                <th>Pensioners</th>
+              </tr>
+
+
+
+
+              <tr>
+
+                <th>
+                  
+                  Interest rate</th>
+                <td>9.60% p.a.- 15.65% p.a.</td>
+                <td>9.75% p.a. -10.25% p.a.
+                </td>
+              </tr>
+
+
+              <tr>
+
+                <th>Loan Amount	</th>
+                <td>Minimum: Rs.25,000 <br>
+                  Maximum: Rs.20 lakh</td>
+                <td>Minimum: Rs.25,000 <br>
+                  Maximum: Rs.14 lakh</td>
+              </tr>
+
+
+              <tr>
+
+                <th>Loan Tenure	</th>
+                <td>Up to 72 months	</td>
+                <td>Up to 84 months
+                </td>
+              </tr>
+
+
+              <tr>
+
+                <th>Processing Fee	</th>
+                <td>1.5% of loan amount + tax</td>
+                <td>0.5% of loan amount + tax (Minimum of Rs.500)</td>
+              </tr>
+
+
+
+              <tr>
+
+                <th>Age	</th>
+                <td>21 - 58 Years	</td>
+                <td>Up to 78 years
+                </td>
+              </tr>
+
+
+
+              <tr>
+
+                <th>Salary/Income	</th>
+                <td>Rs.15,000 onwards	</td>
+                <td>At the discretion of the bank
+                </td>
+              </tr>
+
+
+
+              <tr>
+
+                <th>Credit Score	</th>
+                <td>750 and above	</td>
+                <td>At the discretion of the bank
+                </td>
+              </tr>
+
+
+
+
+              <tr>
+
+                <th>Prepayment Charges	</th>
+                <td>3% on prepaid amount	</td>
+                <td>3% on prepaid amount</td>
+              </tr>
+
+            </table>
+          </div>
+
+          <!-- Canara Bank car loan details -->
+            <!-- <div class="mt-3 pt-5">
+              <h2 class="text-primary">Canara Bank Loans</h2>
+  <p>Canara Bank Personal Loan is offered @ 11.75% onwards for loan amount of up to Rs 10 lakh for tenure of up to 7 years. Canara Bank also offers instant personal loan up to Rs 1 lakh to the salary account holders. Read on to know more about Canara Bank Personal Loan.</p>
+  <hr>
+
+              <table class="table table-striped">
+<tr>
+  <th>Interest Rate	</th>
+  <td>11.75%- 16.25% p.a.</td>
+</tr>
+
+
+<tr>
+  <th>Loan Amount</th>
+  <td>Up to Rs 10 lakh</td>
+</tr>
+
+
+
+<tr>
+  <th>Loan Tenure</th>
+  <td>Up to 7 years</td>
+</tr>
+
+
+
+<tr>
+  <th>Processing Fees</th>
+  <td>Up to 1% of loan amount
+  </td>
+</tr>
+
+
+
+<tr>
+  <th>Prepayment Charges</th>
+  <td>NIL</td>
+</tr>
+
+
+
+<tr>
+  <th>Foreclosure Charges</th>
+  <td>	NIL</td>
+</tr>
+
+
+
+<tr>
+  <th>Instant Personal Loan</th>
+  <td>Up to Rs 1 lakh for salary account holders of Canara Bank</td>
+</tr>
+
+
+
+
+<tr>
+  <th>Documentation</th>
+  <td>
+    <ul>
+      <li>Proof of Identity</li>
+      <li>Proof of Address</li>
+      <li>Salary slips (latest)</li>
+    </ul>
+  </td>
+</tr>
+
+              </table>
+</div> -->
+<!-- Federal Bank car loan details -->
+
+
+<!-- <div class="mt-3 pt-5">
+  <h2 class="text-primary">Federal Bank Loans</h2>
+<p>Apply for instant Federal Bank personal loans up to Rs. 25 Lakhs online at attractive rates of interest starting from 11.49% p.a. for tenure up to 48 months. The processing fee is up to 3% of the loan amount and prepayment can be done at Nil charges for floating rate schemes.</p>
+<hr>
+  <table class="table table-striped">
+
+    <tr>
+      <th>Loan amount	</th>
+      <td>	Up to Rs. 25 Lakhs</td>
+    </tr>
+      
+     
+     
+    <tr>
+      <th>Rate of interest</th>
+      <td>11.49% p.a.
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tenure	</th>
+      <td>6 - 48 months
+      </td>
+    </tr>
+
+    <tr>
+      <th>Lowest EMI Per Lakh	</th>
+      <td>Rs. 2,560 
+      </td>
+    </tr>
+
+    <tr>
+      <th>Processing fee	</th>
+      <td>Up to 3% of the loan amount + GST
+      </td>
+    </tr>
+
+    <tr>
+      <th>Prepayment charges	</th>
+      <td>Up to 3% 
+      </td>
+    </tr>
+
+    <tr>
+      <th>Minimum monthly income	</th>
+      <td>Rs. 25,000
+      </td>
+    </tr>
+
+
+  
+  </table>
+
+</div> -->
+ 
+
+
+
+ 
+            <h2 >Leading Banks</h2>
+            <ul>
+              <li>
+                <a target="_self" href="../../../leading banks.html">
+                  CANARA BANK</a
+                >
+              </li>
+              <li>
+                <a target="_self" href="../../../leading banks.html">
+                STATE BANK OF INDIA</a>
+              </li>
+              <li>
+                <a target="_self" href="../../../leading banks.html">
+                FEDERAL BANK</a>
+              </li>
+            </ul>
+          </div>
+          <footer class="footer">
+            <small style="margin-bottom: 20px; display: inline-block">
+              © 2023 made by the
+              <span style="color: red; font-size: 18px">&#10084;</span>
+              <a target="_self" href="../../../index.html
+            ">Team Out of the box </a>
+            </small>
+            <br />
+            <div class="social-links">
+              <a href="https://github.com/azouaoui-med" target="_self">
+                <i class="ri-github-fill ri-xl"></i>
+              </a>
+              <!--<a href="https://twitter.com/azouaoui_med" target="_self">
+                <i class="ri-twitter-fill ri-xl"></i>
+              </a>
+              <a href="https://codepen.io/azouaoui-med" target="_self">
+                <i class="ri-codepen-fill ri-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-azouaoui/" target="_self">
+                <i class="ri-linkedin-box-fill ri-xl"></i>
+              </a>-->
+            </div>
+          </footer>
+        </main>
+        <div class="overlay"></div>
+      </div>
+    </div>
+<!-- partial -->
+  <script src='https://unpkg.com/@popperjs/core@2'></script><script  src="script.js"></script>
+
+</body>
+</html>
